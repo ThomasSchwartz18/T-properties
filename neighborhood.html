@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas's Properties</title>
+    <link rel="stylesheet" href="resources/css/home.css">
+    <link rel="stylesheet" href="resources/css/login.css">
+    <script src="resources/data/map.js"></script>
+    <script src="resources/data/login.js"></script>
+</head>
+<body>
+
+    <nav class="navbar--container">
+        <a href="./home.html"><h1 class="nav-logo"><span>TProperties</span> Inc.</h1></a>
+
+        <ul class="nav-links">
+            <li><a href="./rent.html"></a>For Rent</li>
+            <li><a href="./sale.html"></a>For Sale</li>
+            <li><a href="./heighborhood.html"></a>Neighborhood</li>
+            <button onclick="document.getElementById('id01').style.display='block'">Residential Login</button>
+        </ul>
+    </nav>
+
+    <main class="welcome-section--container">
+        <div class="welcome-section--container--overlay">
+            <img src="resources/images/common-area.jpg" alt="">
+            <h1>Welcome <br> Home</h1>
+        </div>
+    </main>
+
+    <section class="rent-buy--container">
+        <h2>Whether you are looking to buy or to rent <br> We have <span>You</span> covered!</h2>
+        <a class="instagram--button" href="https://www.instagram.com/">
+            <img src="resources/images/instagram-icon-50x50.png.png" alt="">
+            Follow us!
+        </a>
+        <div class="rent-buy-buttons--container">
+            <a class="rent" href="./rent.html">
+                <div>
+                    <h4 class="rent--text">For Rent <br> <br> Learn More ></h4>
+                </div>
+            </a>
+            <a class="buy" href="./sale.html">
+                <div>
+                    <h4 class="buy--text">For Sale <br> <br> Learn more ></h4>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <div id="googleMap">
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBQlfS2wSUhhdodz84ne9qkKZkiTwyOeo&callback=myMap"></script>
+
+    <footer class="footer--container">
+        <div class="column one">        
+            <a href="./home.html"><h1 class="footer-logo"><span>TProperties</span> Inc.</h1></a>
+            <p>© TProperties Inc. All rights reserved</p>
+        </div>
+        <div class="column">
+            <h4>For Rent contact</h4>
+            <ul class="footer--list">
+                <li>1111 address ave, city Ohio</li>
+                <li>johndoe@email.com</li>
+                <li>+1 (111) 111-1111</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>For Sale contact</h4>
+            <ul class="footer--list">
+                <li>3333 address street, city Ohio</li>
+                <li>johndoe@email.com</li>
+                <li>+1 (111) 222-2222</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>Navigation</h4>
+            <ul class="footer--list">
+                <li><a href="https://www.google.com/maps/@39.2084964,-84.2173394,15z">For rent</a></li>
+                <li><a href="https://www.google.com/maps/@39.2084964,-84.2173394,15z">For sale</a></li>
+                <li><a href="https://www.google.com/maps/@39.2084964,-84.2173394,15z">Neighborhood</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>Residents</h4>
+            <ul class="footer--list">
+                <li><a onclick="document.getElementById('id01').style.display='block'" href="">Login</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- The Modal -->
+    <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'"class="close" title="Close Modal">&times;</span>
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <img src="resources/images/profile-avatar.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="top-container">
+                <label for="uname"><b>Username:</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password:</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button class="login-button" type="submit">Login</button>
+                <label>
+                    <div class="remember-me-container">
+                        <input class="remember-me-box" type="checkbox" checked="checked" name="remember">
+                        <p>Remember Me</p>
+                    </div>
+                </label>
+            </div>
+
+            <div class="bottom-container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
