@@ -1,0 +1,228 @@
+/* The Modal (background) */
+.modal {
+
+    /* display */
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    padding-top: 60px;
+
+    /* design */
+    background-color: rgb(0, 95, 16); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.658); /* Black w/ opacity */
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+
+    /* display */
+    margin: 5% auto; /* 15% from the top and centered */
+    width: 50%; /* Could be more or less, depending on screen size */
+    height: 70%;
+    display: block;
+    padding: 0;
+
+    /* design */
+    background-color: rgba(255, 253, 253, 0.767);
+    border: 1px solid #888;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+.imgcontainer {
+
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    margin: 5% 0 0 0;
+    padding: 0;
+
+    /* design */
+
+}
+
+.avatar {
+
+    /* display */
+    width: 23%;
+    height: 100%;
+    align-items: center;
+
+    /* design */
+    border-radius: 100%;
+
+}
+
+.top-container {
+
+    /* display */
+    margin: 5% auto 0 auto;
+    padding: 0;
+    display: grid;
+    width: 60%;
+    height: 30%;
+    text-align: center;
+
+    /* design */
+
+}
+
+.top-container label {
+
+    /* display */
+    margin-top: 15px;
+
+    /* design */
+    font-size: 24px;
+
+}
+
+.top-container b {
+
+    /* display */
+
+    /* design */
+    font-size: 34px;
+
+}
+
+.top-container input {
+
+    /* display */
+
+    /* design */
+    font-size: 24px;
+
+}
+
+.login-button {
+
+    /* display */
+    margin-top: 25px;
+    height: 50px;
+    width: 100%;
+
+    /* design */
+    background-color: rgb(114,219,162);
+    border: none;
+
+}
+
+.login-button:hover {
+
+    /* display */
+
+    /* design */
+    background-color: rgb(18, 211, 105);
+    cursor: pointer;
+
+}
+
+.remember-me-container {
+
+    /* display */
+    display: flex;
+    align-items: center;
+
+    /* design */
+    font-size: 24px;
+
+}
+
+.remember-me-box {
+
+    /* display */
+    width: 23px;
+    height: 23px;
+
+    /* design */
+
+}
+
+.bottom-container {
+
+    /* display */
+    display: flex;
+    justify-content: space-around;
+    margin: 4.5% 0 0 0;
+    height: 12.291%;
+    padding-top: 5%;
+
+    /* design */
+
+}
+
+.cancelbtn {
+
+    /* display */
+    width: 150px;
+    height: 40%;
+
+    /* design */
+    background-color: rgb(255, 111, 111);
+    border: none;
+    font-size: 24px;
+
+}
+
+.cancelbtn:hover {
+
+    /* display */
+
+    /* design */
+    cursor: pointer;
+    background-color: rgb(255, 57, 57);
+
+}
+
+.psw {
+
+    /* display */
+    margin-top: 20px;
+
+    /* design */
+    font-size: 24px;
+
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}

@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:wght@300;400&family=Pacifico&display=swap');
+/* GLOBAL */
+* {
+}
+
+body {
+
+    /* display */
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+
+    /* design */
+    background-color: blanchedalmond;
+
+}
+
+/* NAV */
+.navbar--container {
+
+    /* display */
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    /* design */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 50px 10px rgb(66, 66, 0);
+
+}
+
+.navbar--container a {
+
+    /* display */
+
+    /* design */
+    text-decoration: none;
+
+}
+
+.nav-logo {
+
+    /* display */
+    margin: 0 0 5px 65px;
+
+    /* design */
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 54px;
+    color: blanchedalmond;
+
+}
+
+.nav-logo span {
+
+    /* dispaly */
+
+    /* design */
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: olive;
+
+}
+
+.nav-links {
+
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    /* design */
+    list-style: none;
+    font-size: 20px;
+    color: olive;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.nav-links li {
+
+    /* display */
+    margin-right: 30px;
+
+    /* design */
+
+}
+
+.nav-links li:hover {
+
+    /* display */
+
+    /* design */
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+.nav-links button {
+
+    /* display */
+    border-radius: 50px;
+    padding: 10px;
+    margin-right: 20px;
+
+    /* design */
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    background-color: rgb(160, 160, 0);
+    border: none;
+    
+}
+
+.nav-links button:hover {
+    
+    /* display */
+    
+    /* design */
+    background-color: rgb(201, 201, 0);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgb(59, 59, 0);
+    
+}
+
+.nav-links button:active {
+
+    /* display */
+
+    /* design */
+    
+}
+
+/* WELCOME_SECTION */
+.welcome-section--container {
+
+    /* display */
+    height: 100vh;
+    padding: 0;
+
+    /* design */
+    background-image: url(../images/Flora-apartments-outsideview.png);
+    background-size: cover;
+
+}
+
+.welcome-section--container--overlay {
+
+    /* display */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* design */
+    background-color: rgba(128, 128, 0, 0.247);
+
+}
+
+.welcome-section--container--overlay img {
+
+    /* display */
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    left: 4%;
+
+    /* design */
+    box-shadow: 0px 0px 50px 10px rgb(66, 66, 0);
+
+}
+
+.welcome-section--container--overlay h1 {
+
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+
+    /* design */
+    font-size: 120px;
+    color: rgb(255, 255, 255);
+    font-family: 'Pacifico', cursive;
+    transform: skew(10deg, -15deg);
+    text-shadow: rgb(66, 66, 0) 10px 10px 8px;
+
+}
+
+/* RENT_BUY */
+.rent-buy--container {
+
+    /* display */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    height: 80vh;
+
+    /* design */
+    background-color: rgb(255, 255, 255);
+
+}
+
+.rent-buy--container h2 {
+
+    /* display */
+
+    /* design */
+    font-size: 48px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.rent-buy--container h2 span {
+
+    /* display */
+
+    /* design */
+    text-decoration: underline;
+    color: olive;
+
+}
+
+.instagram--button {
+
+    /* display */
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+    /* design */
+    width: 20%;
+    font-size: 20px;
+    background-color: rgb(160, 160, 0);
+    border: none;
+    text-decoration: none;
+    color: white;
+
+}
+
+.instagram--button img {
+
+    /* display */
+    margin-right: 15px;
+    width: 30px;
+
+    /* design */
+    
+
+}
+
+.instagram--button:hover {
+
+    /* display */
+
+    /* design */
+    background-color: rgb(201, 201, 0);
+    cursor: pointer;
+
+}
+
+.rent-buy-buttons--container {
+
+    /* display */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200vh;
+    padding: 0;
+    margin: 0;
+
+    /* design */
+
+}
+
+.rent-buy-buttons--container .rent {
+
+    /* display */
+
+    /* design */
+    background-image: url(../images/for-rent3.jpg);
+    background-size: cover;
+    width: 700px;
+    height:500px;
+    text-decoration: none;
+
+}
+
+.rent-buy-buttons--container .buy {
+
+    /* display */
+
+    /* design */
+    background-image: url(../images/for-sale.jpg);
+    background-size: cover;
+    width: 700px;
+    height:500px;
+    text-decoration: none;
+
+}
+
+.rent div,
+.buy div {
+
+    /* display */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+
+    /* design */
+    background-color: rgba(90, 90, 0, 0.247);
+    color: white;
+
+}
+
+.rent div:hover,
+.buy div:hover {
+
+    /* display */
+
+    /* design */
+    background-color: rgba(90, 90, 0, 0.705);
+
+}
+
+.rent--text,
+.buy--text {
+
+    /* display */
+
+    /* design */
+    font-size: 20px;
+
+}
+/* MAP */
+#googleMap {
+
+    /* display */
+    width: 100%;
+    height: 600px;
+
+    /* dedsign */
+    border: 4px solid olive;
+
+}
+
+/* FOOTER */
+.footer--container {
+
+    /* display */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    height: 400px;
+
+    /* design */
+    background-color: rgb(233, 233, 233);
+
+}
+
+.column {
+
+    /* display */
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    line-height: 30px;
+
+    /* design */
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.column h4 {
+
+    /* display */
+    text-align: center;
+
+    /* design */
+
+
+}
+
+.one p {
+
+    /* display */
+    position: absolute;
+    margin-top: 390px;
+
+    /* design */
+
+} 
+
+.footer-logo {
+
+    /* display */
+    margin-bottom: 400px;
+
+    /* design */
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 54px;
+    color: blanchedalmond;
+
+}
+
+.footer-logo span {
+
+    /* dispaly */
+
+    /* design */
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: olive;
+
+}
+
+.column a {
+
+    /* display */
+
+    /* design */
+    text-decoration: none;
+
+}
+
+.footer--list {
+
+    /* display */
+    margin-top: -200px;
+
+    /* design */
+    color: black;
+
+}
+
+.footer--list li a {
+
+    /* display */
+
+    /* design */
+    color: black;
+
+}
+
+.footer--list li a:hover {
+
+    /* display */
+
+    /* design */
+    text-decoration: underline;
+
+}
+
+.footer--list li {
+
+    /* display */
+    
+
+    /* design */
+    list-style: none;
+
+}
